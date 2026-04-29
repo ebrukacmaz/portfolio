@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ebru Kaçmaz - Öğretim teknolojileri dersi kapsamında hazırlanan dijital eğitim materyalleri.">
+    <title>Çalışmalarım | Ebru Kaçmaz e-Portfolyo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FEFDF5', charcoal: '#1D1D1F', 'dark-gray': '#4A4A4F',
+                        sage: '#8DA399', 'sage-light': '#A8BFB3', 'sage-dark': '#6B8A7A',
+                        terracotta: '#B85C38', 'terracotta-light': '#D4845F',
+                    },
+                    fontFamily: { lora: ['Lora','serif'], inter: ['Inter','sans-serif'] },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen bg-cream text-dark-gray font-inter">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-cream/80 backdrop-blur-md transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="font-lora text-2xl font-semibold text-charcoal tracking-tight">Ebru Kaçmaz</a>
+                <div class="hidden md:flex items-center gap-10">
+                    <a href="index.html" class="nav-link text-sm font-medium text-dark-gray tracking-wide uppercase">Ana Sayfa</a>
+                    <a href="about.html" class="nav-link text-sm font-medium text-dark-gray tracking-wide uppercase">Hakkımda</a>
+                    <a href="works.html" class="nav-link active text-sm font-medium text-charcoal tracking-wide uppercase">Çalışmalarım</a>
+                    <a href="subject.html" class="nav-link text-sm font-medium text-dark-gray tracking-wide uppercase">Konu Alanı</a>
+                </div>
+                <button id="mobile-toggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menü" aria-expanded="false">
+                    <span class="bar w-6 h-0.5 bg-charcoal transition-all duration-300 origin-center"></span>
+                    <span class="bar w-6 h-0.5 bg-charcoal transition-all duration-300"></span>
+                    <span class="bar w-6 h-0.5 bg-charcoal transition-all duration-300 origin-center"></span>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-cream/95 backdrop-blur-md border-t border-sage/10">
+            <div class="px-6 py-4 flex flex-col gap-4">
+                <a href="index.html" class="text-sm font-medium text-dark-gray tracking-wide uppercase py-2">Ana Sayfa</a>
+                <a href="about.html" class="text-sm font-medium text-dark-gray tracking-wide uppercase py-2">Hakkımda</a>
+                <a href="works.html" class="text-sm font-medium text-charcoal tracking-wide uppercase py-2">Çalışmalarım</a>
+                <a href="subject.html" class="text-sm font-medium text-dark-gray tracking-wide uppercase py-2">Konu Alanı</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="pt-32 pb-12 md:pt-36 md:pb-16 relative overflow-hidden">
+        <div class="absolute top-20 right-0 w-80 h-80 bg-terracotta/5 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="fade-in-up">
+                <div class="inline-flex items-center gap-2 bg-terracotta/10 rounded-full px-5 py-2 mb-6">
+                    <span class="w-2 h-2 bg-terracotta rounded-full"></span>
+                    <span class="text-xs font-medium text-terracotta tracking-widest uppercase">Projeler</span>
+                </div>
+                <h1 class="font-lora text-4xl md:text-5xl font-bold text-charcoal mb-4">Çalışmalarım</h1>
+                <p class="text-lg text-dark-gray/70 max-w-2xl">Öğretim teknolojileri dersi kapsamında geliştirdiğim dijital eğitim materyalleri ve projeleri aşağıda inceleyebilirsiniz.</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8"><div class="h-px bg-gradient-to-r from-transparent via-sage/30 to-transparent"></div></div>
+
+    <!-- PROJECTS -->
+    <main class="py-16 md:py-24">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 space-y-10">
+
+            <!-- Project 1 -->
+            <article class="card-hover bg-white rounded-2xl border border-sage/10 p-8 md:p-10 fade-in-up">
+                <div class="flex items-start gap-6">
+                    <div class="project-number bg-sage/10 text-sage flex-shrink-0 hidden sm:flex">01</div>
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="text-xs font-medium text-sage bg-sage/10 px-3 py-1 rounded-full uppercase tracking-wider">Sunum</span>
+                        </div>
+                        <h3 class="font-lora text-xl md:text-2xl font-semibold text-charcoal mb-4">Etkileşimli Ders Sunumu</h3>
+                        <p class="leading-relaxed text-dark-gray/80 mb-4">
+                            Bu çalışmada, sosyal bilgiler müfredatına uygun olarak "Kültürel Miras ve Toplumsal Değerler" konusunda etkileşimli bir ders sunumu hazırlanmıştır. Sunum, multimedya ögeleri, anlık sınav soruları ve öğrenci katılımını artıran dinamik geçiş efektleri içermektedir. Özel gereksinimli öğrenciler için alternatif metin açıklamaları ve sesli anlatım desteği eklenmiştir.
+                        </p>
+                        <p class="leading-relaxed text-dark-gray/80 mb-6">
+                            <span class="font-semibold text-charcoal">Eğitime Katkısı:</span> Etkileşimli sunum, farklı öğrenme stillerine sahip öğrencilerin derse aktif katılımını sağlamakta ve konunun somutlaştırılmasına yardımcı olmaktadır. Görsel, işitsel ve kinestetik öğrenme kanallarına hitap eden çoklu temsil biçimleri, kapsayıcı bir öğrenme deneyimi sunmaktadır.
+                        </p>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-outline-sage inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium">
+                            Çalışmayı İncele
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="card-hover bg-white rounded-2xl border border-sage/10 p-8 md:p-10 fade-in-up" style="transition-delay:.1s">
+                <div class="flex items-start gap-6">
+                    <div class="project-number bg-terracotta/10 text-terracotta flex-shrink-0 hidden sm:flex">02</div>
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="text-xs font-medium text-terracotta bg-terracotta/10 px-3 py-1 rounded-full uppercase tracking-wider">Video</span>
+                        </div>
+                        <h3 class="font-lora text-xl md:text-2xl font-semibold text-charcoal mb-4">Eğitsel Video</h3>
+                        <p class="leading-relaxed text-dark-gray/80 mb-4">
+                            "Haklarımız ve Sorumluluklarımız" temalı bu eğitsel video, ilkokul düzeyindeki öğrencilere yönelik olarak hazırlanmıştır. Animasyon destekli anlatım, gerçek yaşam senaryoları ve yaşa uygun örneklerle zenginleştirilmiş içerik, konunun kalıcı öğrenilmesini hedeflemektedir. Alt yazı desteği ve görsel ipuçları, erişilebilirlik ilkeleri doğrultusunda entegre edilmiştir.
+                        </p>
+                        <p class="leading-relaxed text-dark-gray/80 mb-6">
+                            <span class="font-semibold text-charcoal">Eğitime Katkısı:</span> Eğitsel video, soyut kavramların somutlaştırılmasında etkili bir araçtır. İşitme güçlüğü yaşayan öğrenciler için alt yazı desteği, dikkat eksikliği olan öğrenciler için kısa ve odaklanmış bölümler, kapsayıcı tasarım anlayışının yansımalarıdır.
+                        </p>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-outline-sage inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium">
+                            Çalışmayı İncele
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="card-hover bg-white rounded-2xl border border-sage/10 p-8 md:p-10 fade-in-up" style="transition-delay:.15s">
+                <div class="flex items-start gap-6">
+                    <div class="project-number bg-sage/10 text-sage flex-shrink-0 hidden sm:flex">03</div>
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="text-xs font-medium text-sage bg-sage/10 px-3 py-1 rounded-full uppercase tracking-wider">İnfografik</span>
+                        </div>
+                        <h3 class="font-lora text-xl md:text-2xl font-semibold text-charcoal mb-4">İnfografik</h3>
+                        <p class="leading-relaxed text-dark-gray/80 mb-4">
+                            "Türkiye'nin Coğrafi Bölgeleri ve Kültürel Zenginlikleri" konusunu ele alan bu infografik çalışması, karmaşık bilgileri görsel hiyerarşi ve renk kodlaması aracılığıyla anlaşılır bir biçimde sunmaktadır. Yüksek kontrastlı renk paleti ve büyük punto kullanımı, görme güçlüğü yaşayan öğrencilerin erişilebilirliğini ön planda tutmaktadır.
+                        </p>
+                        <p class="leading-relaxed text-dark-gray/80 mb-6">
+                            <span class="font-semibold text-charcoal">Eğitime Katkısı:</span> İnfografik, bilginin görselleştirilmesi yoluyla öğrencilerin kavramsal anlayışını derinleştirmektedir. Özellikle okuma güçlüğü çeken öğrenciler için görsel temsiller, bilgiye alternatif erişim yolları sunmaktadır. Sade ve net tasarım, dikkat dağınıklığını en aza indirmektedir.
+                        </p>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-outline-sage inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium">
+                            Çalışmayı İncele
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="card-hover bg-white rounded-2xl border border-sage/10 p-8 md:p-10 fade-in-up" style="transition-delay:.2s">
+                <div class="flex items-start gap-6">
+                    <div class="project-number bg-terracotta/10 text-terracotta flex-shrink-0 hidden sm:flex">04</div>
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="text-xs font-medium text-terracotta bg-terracotta/10 px-3 py-1 rounded-full uppercase tracking-wider">Oyun</span>
+                        </div>
+                        <h3 class="font-lora text-xl md:text-2xl font-semibold text-charcoal mb-4">Değerlendirme Oyunu</h3>
+                        <p class="leading-relaxed text-dark-gray/80 mb-4">
+                            "Tarih Boyunca Demokrasi" konusunu işleyen bu dijital değerlendirme oyunu, oyunlaştırma (gamification) ilkeleriyle tasarlanmıştır. Çoktan seçmeli sorular, eşleştirme etkinlikleri ve zaman sınırlı görevler, öğrencilerin konuya ilişkin kazanımlarını eğlenceli bir biçimde ölçmektedir. Farklı zorluk seviyeleri, bireysel öğrenme hızlarına uyum sağlamaktadır.
+                        </p>
+                        <p class="leading-relaxed text-dark-gray/80 mb-6">
+                            <span class="font-semibold text-charcoal">Eğitime Katkısı:</span> Oyunlaştırma, öğrencilerin içsel motivasyonunu artırarak öğrenme sürecine aktif katılımı desteklemektedir. Anlık geri bildirim mekanizması, öğrencilerin kendi öğrenme süreçlerini izlemelerine olanak tanımaktadır. Kademeli zorluk seviyeleri, özel gereksinimli öğrencilerin de başarı deneyimi yaşamasını sağlamaktadır.
+                        </p>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-outline-sage inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium">
+                            Çalışmayı İncele
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 5 -->
+            <article class="card-hover bg-white rounded-2xl border border-sage/10 p-8 md:p-10 fade-in-up" style="transition-delay:.25s">
+                <div class="flex items-start gap-6">
+                    <div class="project-number bg-sage/10 text-sage flex-shrink-0 hidden sm:flex">05</div>
+                    <div class="flex-1">
+                        <div class="flex items-center gap-3 mb-2">
+                            <span class="text-xs font-medium text-sage bg-sage/10 px-3 py-1 rounded-full uppercase tracking-wider">Dijital Materyal</span>
+                        </div>
+                        <h3 class="font-lora text-xl md:text-2xl font-semibold text-charcoal mb-4">Kapsayıcı Dijital Materyal</h3>
+                        <p class="leading-relaxed text-dark-gray/80 mb-4">
+                            Bu çalışma, Evrensel Öğrenme Tasarımı (UDL) ilkeleri doğrultusunda hazırlanmış bütünleşik bir dijital öğretim materyalidir. "Toplumsal Katılım ve Vatandaşlık Bilinci" temasını ele alan materyal; metin, ses, görsel ve etkileşimli bileşenleri bir arada sunmaktadır. Erişilebilirlik standartlarına (WCAG) uygun olarak tasarlanmış bu materyal, tüm öğrencilerin eşit biçimde yararlanabilmesini hedeflemektedir.
+                        </p>
+                        <p class="leading-relaxed text-dark-gray/80 mb-6">
+                            <span class="font-semibold text-charcoal">Eğitime Katkısı:</span> Kapsayıcı dijital materyal, farklı öğrenme gereksinimlerine sahip bireylerin aynı içeriğe çeşitli yollarla erişebilmesini sağlamaktadır. Çoklu temsil, çoklu ifade ve çoklu katılım ilkeleri, bu materyalin pedagojik temelini oluşturmaktadır. Özel eğitim alanında bireyselleştirilmiş öğretim hedeflerine ulaşmada önemli bir araçtır.
+                        </p>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn-outline-sage inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium">
+                            Çalışmayı İncele
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-sage/10 py-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex flex-col items-center md:items-start gap-1">
+                    <span class="font-lora text-lg font-semibold text-charcoal">Ebru Kaçmaz</span>
+                    <span class="text-sm text-dark-gray/60">Öğretim Teknolojileri e-Portfolyosu</span>
+                </div>
+                <div class="flex items-center gap-8">
+                    <a href="index.html" class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Ana Sayfa</a>
+                    <a href="about.html" class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Hakkımda</a>
+                    <a href="works.html" class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Çalışmalarım</a>
+                    <a href="subject.html" class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Konu Alanı</a>
+                </div>
+                <p class="text-xs text-dark-gray/40">&copy; 2026 Ebru Kaçmaz. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
