@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ebru Kaçmaz - Konu alanı, akademik çerçeve, eğitim bilgileri ve hedef sınıf düzeyi.">
+    <meta name="description"
+        content="Ebru Kaçmaz - Konu alanı, akademik çerçeve, eğitim bilgileri ve hedef sınıf düzeyi.">
     <title>Konu Alanı | Ebru Kaçmaz e-Portfolyo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -18,13 +22,14 @@
                         sage: '#8DA399', 'sage-light': '#A8BFB3', 'sage-dark': '#6B8A7A',
                         terracotta: '#B85C38', 'terracotta-light': '#D4845F',
                     },
-                    fontFamily: { lora: ['Lora','serif'], inter: ['Inter','sans-serif'] },
+                    fontFamily: { lora: ['Lora', 'serif'], inter: ['Inter', 'sans-serif'] },
                 }
             }
         }
     </script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="min-h-screen bg-cream text-dark-gray font-inter">
 
     <!-- NAVBAR -->
@@ -32,15 +37,21 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <a href="index.html" class="flex items-center group outline-none">
-                    <img src="ebrulogo.svg" alt="Ebru Kaçmaz Logo" class="h-10 md:h-12 lg:h-14 w-auto transition-transform duration-300 group-hover:scale-105" />
+                    <img src="ebrulogo.svg" alt="Ebru Kaçmaz Logo"
+                        class="h-14 md:h-16 lg:h-[72px] w-auto transition-transform duration-300 group-hover:scale-105" />
                 </a>
                 <div class="hidden md:flex items-center gap-10">
-                    <a href="index.html" class="nav-link text-sm font-medium text-dark-gray tracking-wide uppercase">Ana Sayfa</a>
-                    <a href="about.html" class="nav-link text-sm font-medium text-dark-gray tracking-wide uppercase">Hakkımda</a>
-                    <a href="works.html" class="nav-link text-sm font-medium text-dark-gray tracking-wide uppercase">Çalışmalarım</a>
-                    <a href="subject.html" class="nav-link active text-sm font-medium text-charcoal tracking-wide uppercase">Konu Alanı</a>
+                    <a href="index.html" class="nav-link text-sm font-medium text-dark-gray tracking-wide uppercase">Ana
+                        Sayfa</a>
+                    <a href="about.html"
+                        class="nav-link text-sm font-medium text-dark-gray tracking-wide uppercase">Hakkımda</a>
+                    <a href="works.html"
+                        class="nav-link text-sm font-medium text-dark-gray tracking-wide uppercase">Çalışmalarım</a>
+                    <a href="subject.html"
+                        class="nav-link active text-sm font-medium text-charcoal tracking-wide uppercase">Konu Alanı</a>
                 </div>
-                <button id="mobile-toggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menü" aria-expanded="false">
+                <button id="mobile-toggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menü"
+                    aria-expanded="false">
                     <span class="bar w-6 h-0.5 bg-charcoal transition-all duration-300 origin-center"></span>
                     <span class="bar w-6 h-0.5 bg-charcoal transition-all duration-300"></span>
                     <span class="bar w-6 h-0.5 bg-charcoal transition-all duration-300 origin-center"></span>
@@ -49,10 +60,14 @@
         </div>
         <div id="mobile-menu" class="mobile-menu md:hidden bg-cream/95 backdrop-blur-md border-t border-sage/10">
             <div class="px-6 py-4 flex flex-col gap-4">
-                <a href="index.html" class="text-sm font-medium text-dark-gray tracking-wide uppercase py-2">Ana Sayfa</a>
-                <a href="about.html" class="text-sm font-medium text-dark-gray tracking-wide uppercase py-2">Hakkımda</a>
-                <a href="works.html" class="text-sm font-medium text-dark-gray tracking-wide uppercase py-2">Çalışmalarım</a>
-                <a href="subject.html" class="text-sm font-medium text-charcoal tracking-wide uppercase py-2">Konu Alanı</a>
+                <a href="index.html" class="text-sm font-medium text-dark-gray tracking-wide uppercase py-2">Ana
+                    Sayfa</a>
+                <a href="about.html"
+                    class="text-sm font-medium text-dark-gray tracking-wide uppercase py-2">Hakkımda</a>
+                <a href="works.html"
+                    class="text-sm font-medium text-dark-gray tracking-wide uppercase py-2">Çalışmalarım</a>
+                <a href="subject.html" class="text-sm font-medium text-charcoal tracking-wide uppercase py-2">Konu
+                    Alanı</a>
             </div>
         </div>
     </nav>
@@ -71,7 +86,9 @@
         </div>
     </header>
 
-    <div class="max-w-7xl mx-auto px-6 lg:px-8"><div class="h-px bg-gradient-to-r from-transparent via-sage/30 to-transparent"></div></div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="h-px bg-gradient-to-r from-transparent via-sage/30 to-transparent"></div>
+    </div>
 
     <!-- MAIN CONTENT -->
     <main class="py-16 md:py-24">
@@ -80,107 +97,52 @@
             <!-- Introduction -->
             <article class="space-y-16 fade-in-up">
 
-                <section>
-                    <p class="text-lg leading-relaxed text-dark-gray/85 mb-6">
-                        Eğitim yolculuğumda, sosyal bilgiler öğretmenliği ile özel eğitim öğretmenliği alanlarını bir arada yürütmenin bana kazandırdığı en değerli perspektif, her öğrencinin toplumsal yaşama tam ve eşit katılım hakkına sahip olduğu bilincidir. Bu iki disiplinin kesişim noktasında, kapsayıcı ve erişilebilir öğretim uygulamaları geliştirmek temel akademik hedefim olmuştur.
-                    </p>
-                    <p class="text-lg leading-relaxed text-dark-gray/85">
-                        Sosyal bilgiler eğitimi, bireylerin toplumsal, tarihsel ve coğrafi okuryazarlığını geliştirirken; özel eğitim, bireysel farklılıkları merkeze alan pedagojik yaklaşımlar sunmaktadır. Bu iki alanın entegrasyonu, tüm öğrencilerin sosyal bilgiler kazanımlarına ulaşabilmesi için evrensel tasarım ilkeleriyle desteklenen bir öğretim çerçevesi oluşturmaktadır.
-                    </p>
-                </section>
-
-                <!-- Eğitim Bilgileri -->
-                <section>
-                    <h2 class="font-lora text-2xl md:text-3xl font-semibold text-charcoal mb-6 accent-bar">Eğitim Bilgileri</h2>
-                    <div class="bg-white rounded-2xl border border-sage/10 p-8 space-y-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 bg-sage/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <svg class="w-5 h-5 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342"/></svg>
-                            </div>
-                            <div>
-                                <h3 class="font-lora text-lg font-semibold text-charcoal mb-1">Lisans Eğitimi</h3>
-                                <p class="text-dark-gray/80 leading-relaxed">Eğitim Fakültesi, Özel Eğitim Öğretmenliği Bölümü'nde lisans eğitimime devam etmekteyim. Zihinsel engelliler, öğrenme güçlükleri ve otizm spektrum bozukluğu alanlarında uzmanlaşmaktayım.</p>
-                            </div>
-                        </div>
-                        <div class="h-px bg-sage/10"></div>
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 bg-terracotta/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <svg class="w-5 h-5 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
-                            </div>
-                            <div>
-                                <h3 class="font-lora text-lg font-semibold text-charcoal mb-1">Çift Anadal Programı</h3>
-                                <p class="text-dark-gray/80 leading-relaxed">Sosyal Bilgiler Öğretmenliği çift anadal programı kapsamında, tarih, coğrafya, vatandaşlık ve insan hakları gibi temel sosyal bilgiler alanlarında derinlemesine bilgi edinmekteyim.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
                 <!-- Konu Alanı -->
                 <section>
-                    <h2 class="font-lora text-2xl md:text-3xl font-semibold text-charcoal mb-6 accent-bar">Konu Alanı</h2>
+                    <h2 class="font-lora text-2xl md:text-3xl font-semibold text-charcoal mb-6 accent-bar">Konu Alanı
+                    </h2>
                     <p class="text-lg leading-relaxed text-dark-gray/85 mb-6">
-                        Akademik çalışmalarımın odak noktası, sosyal bilgiler müfredatının özel gereksinimli öğrenciler için uyarlanması ve kapsayıcı öğretim stratejilerinin geliştirilmesidir. Bu kapsamda aşağıdaki alt alanlarda çalışmalar yürütmekteyim:
+                        Akademik çalışmalarımın odak noktası, sosyal bilgiler müfredatının özel gereksinimli öğrenciler
+                        için uyarlanması ve kapsayıcı öğretim stratejilerinin geliştirilmesidir. Bu kapsamda aşağıdaki
+                        alt alanlarda çalışmalar yürütmekteyim:
                     </p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div class="bg-white rounded-xl border border-sage/10 p-5 card-hover">
                             <div class="w-8 h-8 bg-sage/10 rounded-lg flex items-center justify-center mb-3">
                                 <span class="font-lora text-sm font-bold text-sage">01</span>
                             </div>
-                            <h4 class="font-lora text-base font-semibold text-charcoal mb-2">Kapsayıcı Sosyal Bilgiler Eğitimi</h4>
-                            <p class="text-sm text-dark-gray/70 leading-relaxed">Farklı öğrenme gereksinimlerine sahip öğrencilerin sosyal bilgiler derslerine etkin katılımını sağlayan öğretim yaklaşımları.</p>
+                            <h4 class="font-lora text-base font-semibold text-charcoal mb-2">Kapsayıcı Sosyal Bilgiler
+                                Eğitimi</h4>
+                            <p class="text-sm text-dark-gray/70 leading-relaxed">Farklı öğrenme gereksinimlerine sahip
+                                öğrencilerin sosyal bilgiler derslerine etkin katılımını sağlayan öğretim yaklaşımları.
+                            </p>
                         </div>
                         <div class="bg-white rounded-xl border border-sage/10 p-5 card-hover">
                             <div class="w-8 h-8 bg-terracotta/10 rounded-lg flex items-center justify-center mb-3">
                                 <span class="font-lora text-sm font-bold text-terracotta">02</span>
                             </div>
                             <h4 class="font-lora text-base font-semibold text-charcoal mb-2">Yardımcı Teknolojiler</h4>
-                            <p class="text-sm text-dark-gray/70 leading-relaxed">Özel gereksinimli öğrencilerin akademik başarısını destekleyen dijital araçlar ve teknolojik uygulamalar.</p>
+                            <p class="text-sm text-dark-gray/70 leading-relaxed">Özel gereksinimli öğrencilerin akademik
+                                başarısını destekleyen dijital araçlar ve teknolojik uygulamalar.</p>
                         </div>
                         <div class="bg-white rounded-xl border border-sage/10 p-5 card-hover">
                             <div class="w-8 h-8 bg-sage/10 rounded-lg flex items-center justify-center mb-3">
                                 <span class="font-lora text-sm font-bold text-sage">03</span>
                             </div>
-                            <h4 class="font-lora text-base font-semibold text-charcoal mb-2">Evrensel Öğrenme Tasarımı</h4>
-                            <p class="text-sm text-dark-gray/70 leading-relaxed">Tüm öğrencilerin başarılı olabileceği esnek ve erişilebilir öğrenme ortamlarının tasarlanması.</p>
+                            <h4 class="font-lora text-base font-semibold text-charcoal mb-2">Evrensel Öğrenme Tasarımı
+                            </h4>
+                            <p class="text-sm text-dark-gray/70 leading-relaxed">Tüm öğrencilerin başarılı olabileceği
+                                esnek ve erişilebilir öğrenme ortamlarının tasarlanması.</p>
                         </div>
                         <div class="bg-white rounded-xl border border-sage/10 p-5 card-hover">
                             <div class="w-8 h-8 bg-terracotta/10 rounded-lg flex items-center justify-center mb-3">
                                 <span class="font-lora text-sm font-bold text-terracotta">04</span>
                             </div>
-                            <h4 class="font-lora text-base font-semibold text-charcoal mb-2">Vatandaşlık ve İnsan Hakları</h4>
-                            <p class="text-sm text-dark-gray/70 leading-relaxed">Demokratik değerler, toplumsal katılım ve insan hakları bilincinin geliştirilmesine yönelik öğretim uygulamaları.</p>
+                            <h4 class="font-lora text-base font-semibold text-charcoal mb-2">Vatandaşlık ve İnsan
+                                Hakları</h4>
+                            <p class="text-sm text-dark-gray/70 leading-relaxed">Demokratik değerler, toplumsal katılım
+                                ve insan hakları bilincinin geliştirilmesine yönelik öğretim uygulamaları.</p>
                         </div>
-                    </div>
-                </section>
-
-                <!-- Sınıf Düzeyi -->
-                <section>
-                    <h2 class="font-lora text-2xl md:text-3xl font-semibold text-charcoal mb-6 accent-bar">Sınıf Düzeyi</h2>
-                    <div class="bg-white rounded-2xl border border-sage/10 p-8">
-                        <p class="text-lg leading-relaxed text-dark-gray/85 mb-6">
-                            Hazırladığım öğretim materyalleri ve dijital içerikler, öncelikli olarak ilkokul ve ortaokul düzeyindeki (4-7. sınıf) öğrencilere yönelik olarak tasarlanmıştır. Bu yaş grubu, sosyal bilgiler kazanımlarının temellerinin atıldığı ve toplumsal farkındalığın şekillenmeye başladığı kritik bir dönemdir.
-                        </p>
-                        <div class="flex flex-wrap gap-3">
-                            <span class="inline-flex items-center gap-2 bg-sage/10 text-sage-dark px-4 py-2 rounded-full text-sm font-medium">
-                                <span class="w-1.5 h-1.5 bg-sage rounded-full"></span>
-                                4. Sınıf
-                            </span>
-                            <span class="inline-flex items-center gap-2 bg-sage/10 text-sage-dark px-4 py-2 rounded-full text-sm font-medium">
-                                <span class="w-1.5 h-1.5 bg-sage rounded-full"></span>
-                                5. Sınıf
-                            </span>
-                            <span class="inline-flex items-center gap-2 bg-terracotta/10 text-terracotta px-4 py-2 rounded-full text-sm font-medium">
-                                <span class="w-1.5 h-1.5 bg-terracotta rounded-full"></span>
-                                6. Sınıf
-                            </span>
-                            <span class="inline-flex items-center gap-2 bg-terracotta/10 text-terracotta px-4 py-2 rounded-full text-sm font-medium">
-                                <span class="w-1.5 h-1.5 bg-terracotta rounded-full"></span>
-                                7. Sınıf
-                            </span>
-                        </div>
-                        <p class="text-dark-gray/70 leading-relaxed mt-6 text-sm">
-                            Öğretim materyallerinde, özel gereksinimli öğrencilerin de bu kazanımlara erişebilmesi için Bireyselleştirilmiş Eğitim Programı (BEP) uyumlu içerikler ve farklılaştırılmış öğretim stratejileri uygulanmaktadır. Her materyal, hem genel eğitim hem de özel eğitim sınıflarında kullanılabilecek esneklikte tasarlanmıştır.
-                        </p>
                     </div>
                 </section>
 
@@ -197,10 +159,16 @@
                     <span class="text-sm text-dark-gray/60">Öğretim Teknolojileri e-Portfolyosu</span>
                 </div>
                 <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 md:gap-8">
-                    <a href="index.html" class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Ana Sayfa</a>
-                    <a href="about.html" class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Hakkımda</a>
-                    <a href="works.html" class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Çalışmalarım</a>
-                    <a href="subject.html" class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Konu Alanı</a>
+                    <a href="index.html"
+                        class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Ana
+                        Sayfa</a>
+                    <a href="about.html"
+                        class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Hakkımda</a>
+                    <a href="works.html"
+                        class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Çalışmalarım</a>
+                    <a href="subject.html"
+                        class="text-xs text-dark-gray/50 hover:text-sage transition-colors uppercase tracking-wider">Konu
+                        Alanı</a>
                 </div>
                 <p class="text-xs text-dark-gray/40">&copy; 2026 Ebru Kaçmaz. Tüm hakları saklıdır.</p>
             </div>
@@ -209,4 +177,5 @@
 
     <script src="main.js"></script>
 </body>
+
 </html>
