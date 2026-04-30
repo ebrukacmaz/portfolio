@@ -71,32 +71,30 @@
     </nav>
 
     <!-- PAGE HEADER -->
-    <header class="pt-24 pb-8 md:pt-28 md:pb-10 relative overflow-hidden">
-        <!-- Arkaplan Görseli ve Profesyonel Geçiş Efekti -->
-        <div class="absolute inset-0 z-0" style="background-image: url('arkaplan.png'); background-size: cover; background-position: center; background-repeat: no-repeat; opacity: 0.15;"></div>
-        <div class="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-cream/60 to-cream"></div>
-
-        <div class="absolute top-20 right-0 w-80 h-80 bg-terracotta/5 rounded-full blur-3xl z-0"></div>
+    <header class="pt-24 pb-6 md:pt-28 md:pb-8 relative overflow-hidden">
+        <!-- Arkaplan Görseli (Tamamen Net) -->
+        <div class="absolute inset-0 z-0" style="background-image: url('arkaplan.png'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+        <!-- Yazıların okunması için minimum şeffaflıkta krem katman -->
+        <div class="absolute inset-0 z-0" style="background-color: rgba(254, 253, 245, 0.15);"></div>
         
         <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
             <div class="fade-in-up">
-                <div class="inline-flex items-center gap-2 bg-terracotta/10 rounded-full px-4 py-1.5 mb-4">
+                <div class="inline-flex items-center gap-2 bg-terracotta/10 rounded-full px-4 py-1.5 mb-4 backdrop-blur-sm">
                     <span class="w-2 h-2 bg-terracotta rounded-full"></span>
                     <span class="text-xs font-medium text-terracotta tracking-widest uppercase">Projeler</span>
                 </div>
-                <h1 class="font-lora text-4xl md:text-5xl font-bold text-charcoal mb-3">Çalışmalarım</h1>
-                <p class="text-lg text-dark-gray/70 max-w-2xl">Öğretim teknolojileri dersi kapsamında geliştirdiğim
+                <h1 class="font-lora text-4xl md:text-5xl font-bold text-charcoal mb-3 drop-shadow-sm">Çalışmalarım</h1>
+                <p class="text-lg text-dark-gray/90 font-medium max-w-2xl drop-shadow-sm">Öğretim teknolojileri dersi kapsamında geliştirdiğim
                     dijital eğitim materyalleri ve projeleri aşağıda inceleyebilirsiniz.</p>
             </div>
         </div>
     </header>
 
-    <div class="max-w-7xl mx-auto px-6 lg:px-8">
-        <div class="h-px bg-gradient-to-r from-transparent via-sage/30 to-transparent"></div>
-    </div>
+    <!-- İnce Modern Çizgi Ayırıcı -->
+    <div class="w-full h-px bg-sage/20 relative z-20"></div>
 
     <!-- PROJECTS -->
-    <main class="py-8 md:py-12">
+    <main class="pt-6 pb-12 md:pt-8 md:pb-24">
         <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
 
             <!-- Project 1 -->
