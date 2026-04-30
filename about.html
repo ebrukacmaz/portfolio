@@ -89,7 +89,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
 
                 <!-- Left: Text content (3 cols) -->
-                <div class="lg:col-span-3 space-y-12 fade-in-up">
+                <div class="order-2 lg:order-1 lg:col-span-3 space-y-12 fade-in-up">
 
                     <!-- Section 1: Introduction -->
                     <section>
@@ -175,20 +175,17 @@
                 </div>
 
                 <!-- Right: Profile image (2 cols) -->
-                <div class="lg:col-span-2 fade-in-up" style="transition-delay:.15s">
+                <div class="order-1 lg:order-2 lg:col-span-2 fade-in-up" style="transition-delay:.15s">
                     <div class="sticky top-28">
-                        <div class="relative">
-                            <!-- Decorative background -->
-                            <div class="absolute -inset-4 bg-sage/5 rounded-3xl -rotate-3"></div>
-                            <div class="absolute -inset-4 bg-terracotta/5 rounded-3xl rotate-2"></div>
-                            <!-- Image -->
-                            <div class="relative rounded-2xl overflow-hidden shadow-lg">
+                        <div class="relative mx-auto max-w-[280px] sm:max-w-sm lg:max-w-[320px]">
+                            <!-- Perfect fit frame -->
+                            <div class="rounded-2xl p-2.5 bg-white border border-sage/20 shadow-xl">
                                 <img src="ebru3.jpeg" alt="Ebru Kaçmaz profil fotoğrafı"
-                                    class="w-full h-auto object-cover aspect-[3/4]" loading="lazy">
+                                    class="w-full h-auto max-h-[65vh] rounded-xl object-contain block" loading="eager">
                             </div>
                         </div>
                         <!-- Name card below image -->
-                        <div class="mt-8 bg-white rounded-2xl border border-sage/10 p-6 text-center">
+                        <div class="mt-6 mx-auto max-w-[280px] sm:max-w-sm lg:max-w-[320px] bg-white rounded-2xl border border-sage/10 p-6 text-center shadow-sm">
                             <h3 class="font-lora text-xl font-semibold text-charcoal mb-1">Ebru Kaçmaz</h3>
                             <p class="text-sm text-sage font-medium mb-2">Öğretmen Adayı</p>
                             <p class="text-xs text-dark-gray/60">Özel Eğitim & Sosyal Bilgiler Öğretmenliği</p>
