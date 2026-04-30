@@ -69,44 +69,28 @@
     </nav>
 
     <!-- MAIN CONTENT -->
-    <main class="pt-32 pb-20 md:pt-36 md:pb-28 relative overflow-hidden">
+    <main class="pt-28 pb-16 md:pt-32 md:pb-24 relative overflow-hidden">
         <div class="absolute top-20 left-0 w-80 h-80 bg-sage/5 rounded-full blur-3xl"></div>
-        <div class="max-w-4xl mx-auto px-6 lg:px-8 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
 
-            <div class="flex flex-col gap-12 lg:gap-16">
-                <!-- Header -->
-                <div class="fade-in-up">
-                    <div class="inline-flex items-center gap-2 bg-sage/10 rounded-full px-5 py-2 mb-6">
-                        <span class="w-2 h-2 bg-sage rounded-full"></span>
-                        <span class="text-xs font-medium text-sage-dark tracking-widest uppercase">Profil</span>
-                    </div>
-                    <h1 class="font-lora text-4xl md:text-5xl font-bold text-charcoal">Hakkımda</h1>
+            <!-- Header (Full width top) -->
+            <div class="fade-in-up mb-4 md:mb-6">
+                <div class="inline-flex items-center gap-2 bg-sage/10 rounded-full px-5 py-2 mb-4">
+                    <span class="w-2 h-2 bg-sage rounded-full"></span>
+                    <span class="text-xs font-medium text-sage-dark tracking-widest uppercase">Profil</span>
                 </div>
+                <h1 class="font-lora text-4xl md:text-5xl font-bold text-charcoal">Hakkımda</h1>
+            </div>
 
-                <!-- Profile image -->
-                <div class="fade-in-up" style="transition-delay:.1s">
-                    <div class="relative mx-auto md:mx-0 max-w-[280px] sm:max-w-sm lg:max-w-[320px]">
-                        <!-- Perfect fit frame -->
-                        <div class="rounded-2xl p-2.5 bg-white border border-sage/20 shadow-xl">
-                            <img src="ebru3.jpeg" alt="Ebru Kaçmaz profil fotoğrafı"
-                                class="w-full h-auto max-h-[65vh] rounded-xl object-contain block" loading="eager">
-                        </div>
-                    </div>
-                    <!-- Name card below image -->
-                    <div
-                        class="mt-6 mx-auto md:mx-0 max-w-[280px] sm:max-w-sm lg:max-w-[320px] bg-white rounded-2xl border border-sage/10 p-6 text-center shadow-sm">
-                        <h3 class="font-lora text-xl font-semibold text-charcoal mb-1">Ebru Kaçmaz</h3>
-                        <p class="text-sm text-sage font-medium mb-2">Öğretmen Adayı</p>
-                        <p class="text-xs text-dark-gray/60">Özel Eğitim & Sosyal Bilgiler Öğretmenliği</p>
-                    </div>
-                </div>
+            <!-- Content Grid (Text Left, Image Right) -->
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-start">
 
-                <!-- Text content -->
-                <div class="space-y-12 fade-in-up" style="transition-delay:.2s">
+                <!-- Left: Text content (3 cols) -->
+                <div class="order-2 lg:order-1 lg:col-span-3 space-y-10 fade-in-up" style="transition-delay:.1s">
 
                     <!-- Section 1: Introduction -->
                     <section>
-                        <h2 class="font-lora text-2xl font-semibold text-charcoal mb-4 accent-bar">Tanışma</h2>
+                        <h2 class="font-lora text-2xl font-semibold text-charcoal mb-3 accent-bar">Tanışma</h2>
                         <p class="leading-relaxed text-dark-gray/85">
                             Merhaba, ben Ebru Kaçmaz. 25 yaşındayım. Eskişehirliyim. Eskişehir Osmangazi Üniversitesi
                             Özel Eğitim ve Sosyal Bilgiler öğretmenliği çift anadal programında eğitim
@@ -118,8 +102,8 @@
 
                     <!-- Section 2: Teaching Philosophy -->
                     <section>
-                        <h2 class="font-lora text-2xl font-semibold text-charcoal mb-4 accent-bar">Öğretim Felsefem</h2>
-                        <p class="leading-relaxed text-dark-gray/85 mb-4">
+                        <h2 class="font-lora text-2xl font-semibold text-charcoal mb-3 accent-bar">Öğretim Felsefem</h2>
+                        <p class="leading-relaxed text-dark-gray/85 mb-3">
                             Öğretmenlik mesleğini yalnızca bilgi aktarımı olarak değil, bireylerin toplumsal yaşama
                             etkin katılımını sağlayan bütüncül bir rehberlik süreci olarak değerlendirmekteyim.
                             Kapsayıcı eğitim felsefem, sınıf ortamında her öğrencinin bireysel farklılıklarının bir
@@ -134,9 +118,9 @@
 
                     <!-- Section 3: Technology in Classroom -->
                     <section>
-                        <h2 class="font-lora text-2xl font-semibold text-charcoal mb-4 accent-bar">Eğitimde Teknoloji
+                        <h2 class="font-lora text-2xl font-semibold text-charcoal mb-3 accent-bar">Eğitimde Teknoloji
                             Kullanımı</h2>
-                        <p class="leading-relaxed text-dark-gray/85 mb-4">
+                        <p class="leading-relaxed text-dark-gray/85 mb-3">
                             Teknolojinin eğitimdeki rolünü, öğrenme engellerini ortadan kaldıran ve erişilebilirliği
                             artıran güçlü bir araç olarak görmekteyim. Özellikle özel eğitim alanında, yardımcı
                             teknolojiler ve dijital materyaller, öğrencilerin bağımsız öğrenme becerilerini geliştirmede
@@ -152,8 +136,8 @@
 
                     <!-- Section 4: Contact -->
                     <section>
-                        <h2 class="font-lora text-2xl font-semibold text-charcoal mb-4 accent-bar">İletişim</h2>
-                        <div class="bg-white rounded-2xl border border-sage/10 p-6 space-y-4">
+                        <h2 class="font-lora text-2xl font-semibold text-charcoal mb-3 accent-bar">İletişim</h2>
+                        <div class="bg-white rounded-2xl border border-sage/10 p-5 space-y-4">
                             <div class="flex items-center gap-4">
                                 <div
                                     class="w-10 h-10 bg-sage/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -185,6 +169,26 @@
                             </div>
                         </div>
                     </section>
+                </div>
+
+                <!-- Right: Profile image (2 cols) -->
+                <div class="order-1 lg:order-2 lg:col-span-2 fade-in-up" style="transition-delay:.15s">
+                    <div class="sticky top-24">
+                        <div class="relative mx-auto max-w-[280px] sm:max-w-sm lg:max-w-[320px]">
+                            <!-- Perfect fit frame -->
+                            <div class="rounded-2xl p-2 bg-white border border-sage/20 shadow-xl">
+                                <img src="ebru3.jpeg" alt="Ebru Kaçmaz profil fotoğrafı"
+                                    class="w-full h-auto max-h-[60vh] rounded-xl object-contain block" loading="eager">
+                            </div>
+                        </div>
+                        <!-- Name card below image -->
+                        <div
+                            class="mt-5 mx-auto max-w-[280px] sm:max-w-sm lg:max-w-[320px] bg-white rounded-2xl border border-sage/10 p-5 text-center shadow-sm">
+                            <h3 class="font-lora text-xl font-semibold text-charcoal mb-1">Ebru Kaçmaz</h3>
+                            <p class="text-sm text-sage font-medium mb-1">Öğretmen Adayı</p>
+                            <p class="text-xs text-dark-gray/60">Özel Eğitim & Sosyal Bilgiler Öğretmenliği</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
