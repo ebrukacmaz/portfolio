@@ -287,14 +287,12 @@
             .hero-header::before {
                 content: '';
                 position: absolute;
-                inset: -5px;
-                /* Slight overflow to prevent blurred edges from clipping */
+                inset: 0;
                 background-image: url('arkaplan.png');
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-                filter: blur(1px);
-                /* Çok az blurluk, arka planın net görünmesi için */
+                /* Blur tamamen kaldırıldı, arka plan %100 net */
                 z-index: 0;
             }
 
@@ -302,8 +300,8 @@
                 content: '';
                 position: absolute;
                 inset: 0;
-                background-color: rgba(254, 253, 245, 0.45);
-                /* Yazıların okunması için daha hafif bir krem rengi katman */
+                background-color: rgba(254, 253, 245, 0.15);
+                /* Arka planın maksimum görünürlüğü için katman neredeyse tamamen şeffaf yapıldı */
                 z-index: 1;
             }
 
