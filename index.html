@@ -78,8 +78,8 @@
     <!-- HERO -->
     <header class="hero-header pt-32 pb-20 md:pt-40 md:pb-28 relative overflow-hidden">
 
-        <!-- Layer 1: Premium Social Studies background with CSS blend mode -->
-        <div class="absolute inset-0 z-0 hero-blended-bg"></div>
+        <!-- Layer 1: Background is now handled by .hero-header pseudo-elements (::before / ::after) for native blurring -->
+
 
         <!-- Layer 2: Cream gradient veil for depth and readability -->
         <div class="absolute inset-0 z-[1]"
@@ -258,38 +258,32 @@
             /* === Hero Blended Background === */
             .hero-header {
                 background-color: #FEFDF5;
+                position: relative;
+            }
+
+            .hero-header::before {
+                content: '';
+                position: absolute;
+                inset: -20px; /* Slight overflow to prevent blurred edges from clipping */
+                background-image: url('hero-social-bg.png');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                opacity: 0.12; /* Very low opacity to keep it subtle */
+                z-index: 0;
+            }
+
+            .hero-header::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                backdrop-filter: blur(10px); /* Softly diffuses the sharp icons into a map texture */
+                background-color: rgba(254, 253, 245, 0.3); /* Warm ivory tint over the blur */
+                z-index: 1;
             }
 
             .hero-title {
                 font-size: clamp(1.75rem, 4.5vw, 3.75rem);
-            }
-
-            .hero-blended-bg {
-                background-image: url('hero-social-bg.png');
-                background-color: #FEFDF5;
-                background-size: cover;
-                background-position: center center;
-                background-repeat: no-repeat;
-                background-blend-mode: overlay;
-                filter: blur(20px) saturate(0.3) sepia(0.6) brightness(1.05);
-                opacity: 0.10;
-                transform: scale(1.15);
-                mix-blend-mode: multiply;
-            }
-
-            /* Responsive: slightly refine on larger screens */
-            @media (min-width: 768px) {
-                .hero-blended-bg {
-                    opacity: 0.09;
-                    filter: blur(18px) saturate(0.35) sepia(0.55) brightness(1.05);
-                }
-            }
-
-            @media (min-width: 1024px) {
-                .hero-blended-bg {
-                    opacity: 0.085;
-                    filter: blur(16px) saturate(0.4) sepia(0.5) brightness(1.05);
-                }
             }
 
             @keyframes float1 {
