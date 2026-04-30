@@ -68,28 +68,41 @@
         </div>
     </nav>
 
-    <!-- PAGE HEADER -->
-    <header class="pt-32 pb-12 md:pt-36 md:pb-16 relative overflow-hidden">
-        <div class="absolute top-20 left-0 w-80 h-80 bg-sage/5 rounded-full blur-3xl"></div>
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-            <div class="fade-in-up">
-                <div class="inline-flex items-center gap-2 bg-sage/10 rounded-full px-5 py-2 mb-6">
-                    <span class="w-2 h-2 bg-sage rounded-full"></span>
-                    <span class="text-xs font-medium text-sage-dark tracking-widest uppercase">Profil</span>
-                </div>
-                <h1 class="font-lora text-4xl md:text-5xl font-bold text-charcoal">Hakkımda</h1>
-            </div>
-        </div>
-    </header>
-
     <!-- MAIN CONTENT -->
-    <main class="pb-20 md:pb-28">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <!-- Split layout -->
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-start">
+    <main class="pt-32 pb-20 md:pt-36 md:pb-28 relative overflow-hidden">
+        <div class="absolute top-20 left-0 w-80 h-80 bg-sage/5 rounded-full blur-3xl"></div>
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 relative z-10">
 
-                <!-- Left: Text content (3 cols) -->
-                <div class="order-2 lg:order-1 lg:col-span-3 space-y-12 fade-in-up">
+            <div class="flex flex-col gap-12 lg:gap-16">
+                <!-- Header -->
+                <div class="fade-in-up">
+                    <div class="inline-flex items-center gap-2 bg-sage/10 rounded-full px-5 py-2 mb-6">
+                        <span class="w-2 h-2 bg-sage rounded-full"></span>
+                        <span class="text-xs font-medium text-sage-dark tracking-widest uppercase">Profil</span>
+                    </div>
+                    <h1 class="font-lora text-4xl md:text-5xl font-bold text-charcoal">Hakkımda</h1>
+                </div>
+
+                <!-- Profile image -->
+                <div class="fade-in-up" style="transition-delay:.1s">
+                    <div class="relative mx-auto md:mx-0 max-w-[280px] sm:max-w-sm lg:max-w-[320px]">
+                        <!-- Perfect fit frame -->
+                        <div class="rounded-2xl p-2.5 bg-white border border-sage/20 shadow-xl">
+                            <img src="ebru3.jpeg" alt="Ebru Kaçmaz profil fotoğrafı"
+                                class="w-full h-auto max-h-[65vh] rounded-xl object-contain block" loading="eager">
+                        </div>
+                    </div>
+                    <!-- Name card below image -->
+                    <div
+                        class="mt-6 mx-auto md:mx-0 max-w-[280px] sm:max-w-sm lg:max-w-[320px] bg-white rounded-2xl border border-sage/10 p-6 text-center shadow-sm">
+                        <h3 class="font-lora text-xl font-semibold text-charcoal mb-1">Ebru Kaçmaz</h3>
+                        <p class="text-sm text-sage font-medium mb-2">Öğretmen Adayı</p>
+                        <p class="text-xs text-dark-gray/60">Özel Eğitim & Sosyal Bilgiler Öğretmenliği</p>
+                    </div>
+                </div>
+
+                <!-- Text content -->
+                <div class="space-y-12 fade-in-up" style="transition-delay:.2s">
 
                     <!-- Section 1: Introduction -->
                     <section>
@@ -172,25 +185,6 @@
                             </div>
                         </div>
                     </section>
-                </div>
-
-                <!-- Right: Profile image (2 cols) -->
-                <div class="order-1 lg:order-2 lg:col-span-2 fade-in-up" style="transition-delay:.15s">
-                    <div class="sticky top-28">
-                        <div class="relative mx-auto max-w-[280px] sm:max-w-sm lg:max-w-[320px]">
-                            <!-- Perfect fit frame -->
-                            <div class="rounded-2xl p-2.5 bg-white border border-sage/20 shadow-xl">
-                                <img src="ebru3.jpeg" alt="Ebru Kaçmaz profil fotoğrafı"
-                                    class="w-full h-auto max-h-[65vh] rounded-xl object-contain block" loading="eager">
-                            </div>
-                        </div>
-                        <!-- Name card below image -->
-                        <div class="mt-6 mx-auto max-w-[280px] sm:max-w-sm lg:max-w-[320px] bg-white rounded-2xl border border-sage/10 p-6 text-center shadow-sm">
-                            <h3 class="font-lora text-xl font-semibold text-charcoal mb-1">Ebru Kaçmaz</h3>
-                            <p class="text-sm text-sage font-medium mb-2">Öğretmen Adayı</p>
-                            <p class="text-xs text-dark-gray/60">Özel Eğitim & Sosyal Bilgiler Öğretmenliği</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
