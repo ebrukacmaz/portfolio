@@ -86,136 +86,128 @@
             style="background: linear-gradient(180deg, rgba(254,253,245,0.88) 0%, rgba(254,253,245,0.74) 30%, rgba(254,253,245,0.70) 60%, rgba(254,253,245,0.90) 100%);">
         </div>
 
-        <!-- Layer 3: SVG Social Studies line-art watermark (compass rose, map lines, atlas, column) -->
+        <!-- Layer 3: Premium SVG Social Studies watermark -->
         <div class="absolute inset-0 z-[2] overflow-hidden" style="animation: patternDrift 35s ease-in-out infinite;">
             <svg class="w-full h-full" viewBox="0 0 1400 700" fill="none" xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="xMidYMid slice" style="opacity: 0.038;">
-                <!-- Ornate Compass Rose (center-left) -->
-                <g transform="translate(100, 220)" stroke="#8DA399" stroke-width="1.0">
-                    <circle cx="60" cy="60" r="55" />
-                    <circle cx="60" cy="60" r="42" />
-                    <circle cx="60" cy="60" r="8" fill="none" />
-                    <!-- Cardinal points -->
-                    <polygon points="60,5 55,52 60,45 65,52" fill="#8DA399" fill-opacity="0.15" />
-                    <polygon points="60,115 55,68 60,75 65,68" fill="#8DA399" fill-opacity="0.1" />
-                    <polygon points="5,60 52,55 45,60 52,65" fill="#8DA399" fill-opacity="0.1" />
-                    <polygon points="115,60 68,55 75,60 68,65" fill="#8DA399" fill-opacity="0.1" />
-                    <!-- Intercardinal points -->
-                    <line x1="21" y1="21" x2="50" y2="50" />
-                    <line x1="99" y1="21" x2="70" y2="50" />
-                    <line x1="21" y1="99" x2="50" y2="70" />
-                    <line x1="99" y1="99" x2="70" y2="70" />
-                    <!-- Decorative tick marks -->
-                    <line x1="60" y1="0" x2="60" y2="12" />
-                    <line x1="60" y1="108" x2="60" y2="120" />
-                    <line x1="0" y1="60" x2="12" y2="60" />
-                    <line x1="108" y1="60" x2="120" y2="60" />
-                    <!-- N/S/E/W text positions (tiny marks) -->
-                    <text x="56" y="22" font-size="8" fill="#8DA399" fill-opacity="0.4" font-family="serif">N</text>
-                    <text x="56" y="110" font-size="8" fill="#8DA399" fill-opacity="0.4" font-family="serif">S</text>
-                    <text x="96" y="64" font-size="8" fill="#8DA399" fill-opacity="0.4" font-family="serif">E</text>
-                    <text x="16" y="64" font-size="8" fill="#8DA399" fill-opacity="0.4" font-family="serif">W</text>
+                preserveAspectRatio="xMidYMid slice" style="opacity: 0.04;">
+
+                <!-- Ornate Compass Rose (left) -->
+                <g transform="translate(80, 180)">
+                    <circle cx="70" cy="70" r="65" stroke="#8DA399" stroke-width="1.5" fill="#8DA399" fill-opacity="0.03" />
+                    <circle cx="70" cy="70" r="50" stroke="#8DA399" stroke-width="0.8" fill="none" />
+                    <circle cx="70" cy="70" r="10" fill="#8DA399" fill-opacity="0.08" />
+                    <!-- N diamond -->
+                    <polygon points="70,5 63,60 70,50 77,60" fill="#8DA399" fill-opacity="0.18" stroke="#8DA399" stroke-width="0.6" />
+                    <!-- S diamond -->
+                    <polygon points="70,135 63,80 70,90 77,80" fill="#8DA399" fill-opacity="0.10" stroke="#8DA399" stroke-width="0.6" />
+                    <!-- E diamond -->
+                    <polygon points="135,70 80,63 90,70 80,77" fill="#8DA399" fill-opacity="0.10" stroke="#8DA399" stroke-width="0.6" />
+                    <!-- W diamond -->
+                    <polygon points="5,70 60,63 50,70 60,77" fill="#8DA399" fill-opacity="0.10" stroke="#8DA399" stroke-width="0.6" />
+                    <!-- Intercardinal lines -->
+                    <line x1="22" y1="22" x2="55" y2="55" stroke="#8DA399" stroke-width="0.5" />
+                    <line x1="118" y1="22" x2="85" y2="55" stroke="#8DA399" stroke-width="0.5" />
+                    <line x1="22" y1="118" x2="55" y2="85" stroke="#8DA399" stroke-width="0.5" />
+                    <line x1="118" y1="118" x2="85" y2="85" stroke="#8DA399" stroke-width="0.5" />
+                    <!-- Outer ring tick marks -->
+                    <line x1="70" y1="0" x2="70" y2="14" stroke="#8DA399" stroke-width="1" />
+                    <line x1="70" y1="126" x2="70" y2="140" stroke="#8DA399" stroke-width="1" />
+                    <line x1="0" y1="70" x2="14" y2="70" stroke="#8DA399" stroke-width="1" />
+                    <line x1="126" y1="70" x2="140" y2="70" stroke="#8DA399" stroke-width="1" />
                 </g>
 
-                <!-- World map grid lines (parallels & meridians) -->
-                <g stroke="#8DA399" stroke-width="0.5" opacity="0.6">
-                    <!-- Parallels -->
-                    <path d="M300,150 Q700,140 1100,150" fill="none" />
-                    <path d="M280,250 Q700,235 1120,250" fill="none" />
-                    <path d="M300,350 Q700,340 1100,350" fill="none" />
-                    <path d="M280,450 Q700,440 1120,450" fill="none" />
-                    <path d="M300,550 Q700,545 1100,550" fill="none" />
-                    <!-- Meridians (curved for globe projection feel) -->
-                    <path d="M450,100 Q440,350 450,620" fill="none" />
-                    <path d="M620,80 Q615,350 620,640" fill="none" />
-                    <path d="M790,80 Q795,350 790,640" fill="none" />
-                    <path d="M960,100 Q970,350 960,620" fill="none" />
+                <!-- World map grid (parallels & meridians) -->
+                <g stroke="#8DA399" opacity="0.5">
+                    <path d="M320,120 Q700,108 1080,120" stroke-width="0.6" fill="none" />
+                    <path d="M300,230 Q700,215 1100,230" stroke-width="0.7" fill="none" />
+                    <path d="M320,340 Q700,330 1080,340" stroke-width="0.6" fill="none" />
+                    <path d="M300,450 Q700,440 1100,450" stroke-width="0.7" fill="none" />
+                    <path d="M320,560 Q700,552 1080,560" stroke-width="0.6" fill="none" />
+                    <path d="M460,80 Q450,350 460,630" stroke-width="0.6" fill="none" />
+                    <path d="M630,60 Q622,350 630,650" stroke-width="0.7" fill="none" />
+                    <path d="M800,60 Q808,350 800,650" stroke-width="0.7" fill="none" />
+                    <path d="M970,80 Q980,350 970,630" stroke-width="0.6" fill="none" />
                 </g>
 
-                <!-- Aged open atlas/book (right side) -->
-                <g transform="translate(1080, 380)" stroke="#8DA399" stroke-width="1.1">
-                    <path d="M50,8 Q25,0 0,10 L0,80 Q25,70 50,78 Q75,70 100,80 L100,10 Q75,0 50,8 Z" fill="none" />
-                    <line x1="50" y1="8" x2="50" y2="78" />
-                    <!-- Page lines left -->
-                    <line x1="8" y1="25" x2="42" y2="22" />
-                    <line x1="8" y1="35" x2="42" y2="32" />
-                    <line x1="8" y1="45" x2="42" y2="42" />
-                    <line x1="8" y1="55" x2="38" y2="52" />
-                    <!-- Page lines right -->
-                    <line x1="58" y1="22" x2="92" y2="25" />
-                    <line x1="58" y1="32" x2="92" y2="35" />
-                    <line x1="58" y1="42" x2="88" y2="44" />
+                <!-- Leather book stack (bottom-left) -->
+                <g transform="translate(300, 480)">
+                    <rect x="0" y="0" width="80" height="16" rx="2" fill="#8DA399" fill-opacity="0.06" stroke="#8DA399" stroke-width="0.8" />
+                    <rect x="4" y="18" width="80" height="16" rx="2" fill="#8DA399" fill-opacity="0.05" stroke="#8DA399" stroke-width="0.8" />
+                    <rect x="-2" y="36" width="80" height="16" rx="2" fill="#8DA399" fill-opacity="0.04" stroke="#8DA399" stroke-width="0.8" />
+                    <rect x="2" y="54" width="80" height="16" rx="2" fill="#8DA399" fill-opacity="0.06" stroke="#8DA399" stroke-width="0.8" />
+                    <!-- Spine bands -->
+                    <line x1="4" y1="3" x2="4" y2="13" stroke="#8DA399" stroke-width="1.2" opacity="0.3" />
+                    <line x1="8" y1="21" x2="8" y2="31" stroke="#8DA399" stroke-width="1.2" opacity="0.3" />
+                    <line x1="2" y1="39" x2="2" y2="49" stroke="#8DA399" stroke-width="1.2" opacity="0.3" />
+                    <line x1="6" y1="57" x2="6" y2="67" stroke="#8DA399" stroke-width="1.2" opacity="0.3" />
                 </g>
 
-                <!-- Stacked leather books (bottom left) -->
-                <g transform="translate(320, 510)" stroke="#8DA399" stroke-width="1.0">
-                    <rect x="0" y="0" width="70" height="14" rx="2" fill="none" />
-                    <rect x="4" y="16" width="70" height="14" rx="2" fill="none" />
-                    <rect x="-3" y="32" width="70" height="14" rx="2" fill="none" />
-                    <rect x="2" y="48" width="70" height="14" rx="2" fill="none" />
-                    <!-- Spine details -->
-                    <line x1="3" y1="3" x2="3" y2="11" />
-                    <line x1="7" y1="19" x2="7" y2="27" />
-                    <line x1="0" y1="35" x2="0" y2="43" />
+                <!-- Open atlas (right) -->
+                <g transform="translate(1060, 360)">
+                    <path d="M55,8 Q28,0 0,10 L0,90 Q28,78 55,88 Q82,78 110,90 L110,10 Q82,0 55,8 Z" fill="#8DA399" fill-opacity="0.04" stroke="#8DA399" stroke-width="1" />
+                    <line x1="55" y1="8" x2="55" y2="88" stroke="#8DA399" stroke-width="0.8" />
+                    <line x1="10" y1="28" x2="46" y2="24" stroke="#8DA399" stroke-width="0.5" opacity="0.5" />
+                    <line x1="10" y1="40" x2="46" y2="36" stroke="#8DA399" stroke-width="0.5" opacity="0.5" />
+                    <line x1="10" y1="52" x2="46" y2="48" stroke="#8DA399" stroke-width="0.5" opacity="0.5" />
+                    <line x1="10" y1="64" x2="40" y2="60" stroke="#8DA399" stroke-width="0.5" opacity="0.5" />
+                    <line x1="64" y1="24" x2="100" y2="28" stroke="#8DA399" stroke-width="0.5" opacity="0.5" />
+                    <line x1="64" y1="36" x2="100" y2="40" stroke="#8DA399" stroke-width="0.5" opacity="0.5" />
+                    <line x1="64" y1="48" x2="96" y2="52" stroke="#8DA399" stroke-width="0.5" opacity="0.5" />
                 </g>
 
-                <!-- Small compass rose (top right) -->
-                <g transform="translate(1150, 80)" stroke="#8DA399" stroke-width="0.8">
-                    <circle cx="30" cy="30" r="26" />
-                    <circle cx="30" cy="30" r="18" />
-                    <polygon points="30,4 27,26 30,22 33,26" fill="#8DA399" fill-opacity="0.12" />
-                    <polygon points="30,56 27,34 30,38 33,34" fill="#8DA399" fill-opacity="0.08" />
-                    <line x1="30" y1="0" x2="30" y2="8" />
-                    <line x1="30" y1="52" x2="30" y2="60" />
-                    <line x1="0" y1="30" x2="8" y2="30" />
-                    <line x1="52" y1="30" x2="60" y2="30" />
+                <!-- Small compass rose (top-right) -->
+                <g transform="translate(1150, 60)">
+                    <circle cx="35" cy="35" r="30" stroke="#8DA399" stroke-width="1" fill="#8DA399" fill-opacity="0.02" />
+                    <circle cx="35" cy="35" r="20" stroke="#8DA399" stroke-width="0.6" fill="none" />
+                    <polygon points="35,5 32,30 35,25 38,30" fill="#8DA399" fill-opacity="0.14" stroke="#8DA399" stroke-width="0.5" />
+                    <polygon points="35,65 32,40 35,45 38,40" fill="#8DA399" fill-opacity="0.08" stroke="#8DA399" stroke-width="0.5" />
+                    <line x1="35" y1="0" x2="35" y2="10" stroke="#8DA399" stroke-width="0.8" />
+                    <line x1="35" y1="60" x2="35" y2="70" stroke="#8DA399" stroke-width="0.8" />
+                    <line x1="0" y1="35" x2="10" y2="35" stroke="#8DA399" stroke-width="0.8" />
+                    <line x1="60" y1="35" x2="70" y2="35" stroke="#8DA399" stroke-width="0.8" />
                 </g>
 
-                <!-- Ancient Greek column (far left accent) -->
-                <g transform="translate(50, 460)" stroke="#8DA399" stroke-width="0.9">
-                    <rect x="3" y="0" width="30" height="6" rx="1" fill="none" />
-                    <line x1="6" y1="6" x2="6" y2="85" />
-                    <line x1="12" y1="6" x2="12" y2="85" />
-                    <line x1="18" y1="6" x2="18" y2="85" />
-                    <line x1="24" y1="6" x2="24" y2="85" />
-                    <line x1="30" y1="6" x2="30" y2="85" />
-                    <rect x="0" y="85" width="36" height="6" rx="1" fill="none" />
-                    <!-- Capital detail -->
-                    <path d="M0,0 Q-3,-5 3,-3" fill="none" />
-                    <path d="M36,0 Q39,-5 33,-3" fill="none" />
+                <!-- Globe (center-right) -->
+                <g transform="translate(860, 100)">
+                    <circle cx="50" cy="50" r="48" stroke="#8DA399" stroke-width="1.2" fill="#8DA399" fill-opacity="0.025" />
+                    <ellipse cx="50" cy="50" rx="20" ry="48" stroke="#8DA399" stroke-width="0.6" fill="none" />
+                    <ellipse cx="50" cy="50" rx="38" ry="48" stroke="#8DA399" stroke-width="0.5" fill="none" />
+                    <line x1="2" y1="50" x2="98" y2="50" stroke="#8DA399" stroke-width="0.7" />
+                    <ellipse cx="50" cy="30" rx="44" ry="5" stroke="#8DA399" stroke-width="0.5" fill="none" />
+                    <ellipse cx="50" cy="70" rx="44" ry="5" stroke="#8DA399" stroke-width="0.5" fill="none" />
                 </g>
 
-                <!-- Globe with latitude lines (center-right) -->
-                <g transform="translate(870, 130)" stroke="#8DA399" stroke-width="0.9">
-                    <circle cx="45" cy="45" r="42" />
-                    <ellipse cx="45" cy="45" rx="18" ry="42" />
-                    <ellipse cx="45" cy="45" rx="34" ry="42" />
-                    <line x1="3" y1="45" x2="87" y2="45" />
-                    <ellipse cx="45" cy="28" rx="38" ry="5" />
-                    <ellipse cx="45" cy="62" rx="38" ry="5" />
-                    <!-- Axis tilt line -->
-                    <line x1="45" y1="0" x2="45" y2="5" />
+                <!-- Hourglass (top-center) -->
+                <g transform="translate(680, 20)">
+                    <line x1="4" y1="0" x2="50" y2="0" stroke="#8DA399" stroke-width="1.2" />
+                    <line x1="4" y1="78" x2="50" y2="78" stroke="#8DA399" stroke-width="1.2" />
+                    <path d="M8,0 L24,36 Q27,39 30,36 L46,0" fill="#8DA399" fill-opacity="0.05" stroke="#8DA399" stroke-width="0.8" />
+                    <path d="M8,78 L24,42 Q27,39 30,42 L46,78" fill="#8DA399" fill-opacity="0.05" stroke="#8DA399" stroke-width="0.8" />
+                    <!-- Sand fill -->
+                    <path d="M22,50 Q27,44 32,50 L38,78 L16,78 Z" fill="#8DA399" fill-opacity="0.08" />
                 </g>
 
-                <!-- Scroll/document (mid area) -->
-                <g transform="translate(560, 480)" stroke="#8DA399" stroke-width="0.9">
-                    <path d="M0,10 Q0,0 10,0 L55,0 Q65,0 65,10 L65,65 Q65,75 55,75 L10,75 Q0,75 0,65 Z" fill="none" />
-                    <circle cx="0" cy="10" r="5" fill="none" />
-                    <circle cx="0" cy="65" r="5" fill="none" />
-                    <!-- Text lines on scroll -->
-                    <line x1="12" y1="18" x2="52" y2="18" />
-                    <line x1="12" y1="28" x2="48" y2="28" />
-                    <line x1="12" y1="38" x2="52" y2="38" />
-                    <line x1="12" y1="48" x2="42" y2="48" />
-                    <line x1="12" y1="58" x2="50" y2="58" />
+                <!-- Ancient column (far-left) -->
+                <g transform="translate(40, 440)">
+                    <rect x="2" y="0" width="34" height="7" rx="1.5" fill="#8DA399" fill-opacity="0.06" stroke="#8DA399" stroke-width="0.7" />
+                    <rect x="5" y="7" width="28" height="80" fill="#8DA399" fill-opacity="0.03" stroke="#8DA399" stroke-width="0.6" />
+                    <rect x="0" y="87" width="38" height="7" rx="1.5" fill="#8DA399" fill-opacity="0.06" stroke="#8DA399" stroke-width="0.7" />
+                    <!-- Fluting -->
+                    <line x1="10" y1="9" x2="10" y2="85" stroke="#8DA399" stroke-width="0.4" opacity="0.4" />
+                    <line x1="16" y1="9" x2="16" y2="85" stroke="#8DA399" stroke-width="0.4" opacity="0.4" />
+                    <line x1="22" y1="9" x2="22" y2="85" stroke="#8DA399" stroke-width="0.4" opacity="0.4" />
+                    <line x1="28" y1="9" x2="28" y2="85" stroke="#8DA399" stroke-width="0.4" opacity="0.4" />
                 </g>
 
-                <!-- Hourglass (time/history symbol) -->
-                <g transform="translate(700, 30)" stroke="#8DA399" stroke-width="0.9">
-                    <line x1="5" y1="0" x2="45" y2="0" />
-                    <line x1="5" y1="70" x2="45" y2="70" />
-                    <path d="M8,0 L22,32 Q25,35 28,32 L42,0" fill="none" />
-                    <path d="M8,70 L22,38 Q25,35 28,38 L42,70" fill="none" />
+                <!-- Scroll (mid-bottom) -->
+                <g transform="translate(540, 490)">
+                    <path d="M5,12 Q5,0 16,0 L60,0 Q72,0 72,12 L72,68 Q72,80 60,80 L16,80 Q5,80 5,68 Z" fill="#8DA399" fill-opacity="0.035" stroke="#8DA399" stroke-width="0.8" />
+                    <circle cx="5" cy="12" r="6" fill="#8DA399" fill-opacity="0.04" stroke="#8DA399" stroke-width="0.6" />
+                    <circle cx="5" cy="68" r="6" fill="#8DA399" fill-opacity="0.04" stroke="#8DA399" stroke-width="0.6" />
+                    <line x1="16" y1="20" x2="58" y2="20" stroke="#8DA399" stroke-width="0.5" opacity="0.4" />
+                    <line x1="16" y1="32" x2="54" y2="32" stroke="#8DA399" stroke-width="0.5" opacity="0.4" />
+                    <line x1="16" y1="44" x2="58" y2="44" stroke="#8DA399" stroke-width="0.5" opacity="0.4" />
+                    <line x1="16" y1="56" x2="48" y2="56" stroke="#8DA399" stroke-width="0.5" opacity="0.4" />
                 </g>
             </svg>
         </div>
@@ -234,19 +226,21 @@
 
         <!-- Content -->
         <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-            <div class="max-w-3xl mx-auto text-center fade-in-up">
-                <div class="inline-flex items-center gap-2 bg-sage/10 rounded-full px-5 py-2 mb-8">
+            <div class="max-w-4xl mx-auto text-center fade-in-up">
+                <div class="inline-flex items-center gap-2 bg-sage/10 rounded-full px-5 py-2 mb-10">
                     <span class="w-2 h-2 bg-sage rounded-full"></span>
                     <span class="text-xs font-medium text-sage-dark tracking-widest uppercase">e-Portfolyo</span>
                 </div>
-                <h1 class="font-lora text-4xl md:text-5xl lg:text-6xl font-bold text-charcoal leading-tight mb-8">
-                    Sosyal Bilgiler Öğretmenliği<br><span class="text-sage">e-Portfolyosuna</span> Hoş Geldiniz
+                <h1 class="hero-title font-lora font-bold text-sage leading-[1.15] mb-4">
+                    <span class="block whitespace-nowrap">Sosyal Bilgiler Öğretmenliği</span>
                 </h1>
-                <p class="text-lg md:text-xl text-dark-gray/80 leading-relaxed max-w-2xl mx-auto mb-10">
-                    Bu portfolyo, her öğrencinin biricik olduğu ilkesinden yola çıkarak tasarlanmış kapsayıcı ve dijital
-                    öğretim materyallerini sergilemektedir. Sosyal bilgiler alanlarında, evrensel tasarım
-                    ilkeleriyle şekillenen öğretim uygulamalarım ve akademik çalışmalarım bu platformda bir araya
-                    gelmektedir.
+                <h2 class="hero-title font-lora font-bold text-sage leading-[1.15] mb-10">
+                    <span class="block whitespace-nowrap">e-Portfolyosuna Hoş Geldiniz</span>
+                </h2>
+                <p class="font-inter text-base md:text-lg lg:text-xl text-dark-gray/80 leading-relaxed max-w-2xl mx-auto mb-12">
+                    Disiplinler arası kapsayıcı eğitim vizyonumu keşfedin: Sosyal Bilgiler ve Özel Eğitim
+                    disiplinlerinin kesişiminde, her öğrencinin bireysel ihtiyaçlarını merkeze alan, pedagojik
+                    yenilikçiliği dijital materyallerle birleştiren portfolyomu inceleyin.
                 </p>
                 <a href="#cards"
                     class="inline-flex flex-col items-center gap-2 text-sage hover:text-sage-dark transition-colors group"
@@ -264,6 +258,10 @@
             /* === Hero Blended Background === */
             .hero-header {
                 background-color: #FEFDF5;
+            }
+
+            .hero-title {
+                font-size: clamp(1.75rem, 4.5vw, 3.75rem);
             }
 
             .hero-blended-bg {
