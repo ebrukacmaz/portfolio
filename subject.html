@@ -75,13 +75,17 @@
     <!-- PAGE HEADER -->
     <header class="pt-32 pb-12 md:pt-36 md:pb-16 relative overflow-hidden">
         <div class="absolute top-20 left-1/2 w-96 h-96 bg-sage/5 rounded-full blur-3xl -translate-x-1/2"></div>
+        <div class="absolute inset-0 z-0"
+            style="background-image: url('arkaplan.png'); background-size: cover; background-position: center; background-repeat: no-repeat; opacity: 0.08; filter: blur(1px);">
+        </div>
         <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
             <div class="fade-in-up">
                 <div class="inline-flex items-center gap-2 bg-sage/10 rounded-full px-5 py-2 mb-6">
                     <span class="w-2 h-2 bg-sage rounded-full"></span>
-                    <span class="text-xs font-medium text-sage-dark tracking-widest uppercase">Akademik</span>
+                    <span class="text-xs font-medium text-sage-dark tracking-widest uppercase">Akademik Çerçeve</span>
                 </div>
-                <h1 class="font-lora text-4xl md:text-5xl font-bold text-charcoal">Konu Alanı ve Akademik Çerçeve</h1>
+                <h1 class="font-lora text-4xl md:text-5xl font-bold text-charcoal mb-4">Konu Alanı ve Müfredat Bilgileri</h1>
+                <p class="text-lg text-dark-gray/80 max-w-3xl">Türkistan'da kurulan ilk Türk devletlerinin medeniyetimize katkılarını sorgulama odağında hazırlanan eğitim tasarımı.</p>
             </div>
         </div>
     </header>
@@ -92,61 +96,153 @@
 
     <!-- MAIN CONTENT -->
     <main class="py-16 md:py-24">
-        <div class="max-w-3xl mx-auto px-6 lg:px-8">
-
-            <!-- Introduction -->
-            <article class="space-y-16 fade-in-up">
-
-                <!-- Konu Alanı -->
-                <section>
-                    <h2 class="font-lora text-2xl md:text-3xl font-semibold text-charcoal mb-6 accent-bar">Konu Alanı
-                    </h2>
-                    <p class="text-lg leading-relaxed text-dark-gray/85 mb-6">
-                        Akademik çalışmalarımın odak noktası, sosyal bilgiler müfredatının özel gereksinimli öğrenciler
-                        için uyarlanması ve kapsayıcı öğretim stratejilerinin geliştirilmesidir. Bu kapsamda aşağıdaki
-                        alt alanlarda çalışmalar yürütmekteyim:
-                    </p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="bg-white rounded-xl border border-sage/10 p-5 card-hover">
-                            <div class="w-8 h-8 bg-sage/10 rounded-lg flex items-center justify-center mb-3">
-                                <span class="font-lora text-sm font-bold text-sage">01</span>
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                
+                <!-- Sol Sütun: Müfredat ve Eğitim Bilgileri (1/3 genişlik) -->
+                <div class="lg:col-span-1 space-y-8 fade-in-up">
+                    
+                    <!-- Eğitim Bilgileri Kartı -->
+                    <div class="bg-white rounded-2xl border border-sage/15 p-6 shadow-sm">
+                        <h3 class="font-lora text-lg font-bold text-charcoal mb-4 flex items-center gap-2">
+                            <svg class="w-5 h-5 text-sage" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                            </svg>
+                            Eğitim Bilgileri
+                        </h3>
+                        <div class="space-y-4 text-sm">
+                            <div class="border-b border-sage/10 pb-3">
+                                <span class="text-xs text-dark-gray/50 uppercase block font-semibold">Konu Alanı</span>
+                                <span class="font-medium text-dark-gray/90">Sosyal Bilgiler Eğitimi</span>
                             </div>
-                            <h4 class="font-lora text-base font-semibold text-charcoal mb-2">Kapsayıcı Sosyal Bilgiler
-                                Eğitimi</h4>
-                            <p class="text-sm text-dark-gray/70 leading-relaxed">Farklı öğrenme gereksinimlerine sahip
-                                öğrencilerin sosyal bilgiler derslerine etkin katılımını sağlayan öğretim yaklaşımları.
-                            </p>
-                        </div>
-                        <div class="bg-white rounded-xl border border-sage/10 p-5 card-hover">
-                            <div class="w-8 h-8 bg-terracotta/10 rounded-lg flex items-center justify-center mb-3">
-                                <span class="font-lora text-sm font-bold text-terracotta">02</span>
+                            <div class="border-b border-sage/10 pb-3">
+                                <span class="text-xs text-dark-gray/50 uppercase block font-semibold">Sınıf Düzeyi</span>
+                                <span class="font-medium text-dark-gray/90">6. Sınıf (Ortaokul)</span>
                             </div>
-                            <h4 class="font-lora text-base font-semibold text-charcoal mb-2">Yardımcı Teknolojiler</h4>
-                            <p class="text-sm text-dark-gray/70 leading-relaxed">Özel gereksinimli öğrencilerin akademik
-                                başarısını destekleyen dijital araçlar ve teknolojik uygulamalar.</p>
-                        </div>
-                        <div class="bg-white rounded-xl border border-sage/10 p-5 card-hover">
-                            <div class="w-8 h-8 bg-sage/10 rounded-lg flex items-center justify-center mb-3">
-                                <span class="font-lora text-sm font-bold text-sage">03</span>
+                            <div class="border-b border-sage/10 pb-3">
+                                <span class="text-xs text-dark-gray/50 uppercase block font-semibold">Müfredat Ünitesi</span>
+                                <span class="font-medium text-dark-gray/90">3. Ünite: Ülkemiz, Kültürümüz ve Tarihimiz</span>
                             </div>
-                            <h4 class="font-lora text-base font-semibold text-charcoal mb-2">Evrensel Öğrenme Tasarımı
-                            </h4>
-                            <p class="text-sm text-dark-gray/70 leading-relaxed">Tüm öğrencilerin başarılı olabileceği
-                                esnek ve erişilebilir öğrenme ortamlarının tasarlanması.</p>
-                        </div>
-                        <div class="bg-white rounded-xl border border-sage/10 p-5 card-hover">
-                            <div class="w-8 h-8 bg-terracotta/10 rounded-lg flex items-center justify-center mb-3">
-                                <span class="font-lora text-sm font-bold text-terracotta">04</span>
+                            <div>
+                                <span class="text-xs text-dark-gray/50 uppercase block font-semibold">Kazanım Kodu</span>
+                                <span class="font-medium text-terracotta font-mono font-bold">SB.6.3.1</span>
                             </div>
-                            <h4 class="font-lora text-base font-semibold text-charcoal mb-2">Vatandaşlık ve İnsan
-                                Hakları</h4>
-                            <p class="text-sm text-dark-gray/70 leading-relaxed">Demokratik değerler, toplumsal katılım
-                                ve insan hakları bilincinin geliştirilmesine yönelik öğretim uygulamaları.</p>
                         </div>
                     </div>
-                </section>
 
-            </article>
+                    <!-- Kazanım Detayı Kutusu -->
+                    <div class="bg-terracotta/5 rounded-2xl border border-terracotta/15 p-6">
+                        <span class="inline-block bg-terracotta/10 text-terracotta text-xs font-bold px-2.5 py-1 rounded-full mb-3">Hedef Kazanım</span>
+                        <p class="font-lora text-charcoal text-sm leading-relaxed italic">
+                            "Türkistan'da kurulan ilk Türk devletlerinin medeniyetimize katkılarını sorgulayabilme."
+                        </p>
+                    </div>
+
+                    <!-- Çift Anadal Entegrasyon Vurgusu -->
+                    <div class="bg-sage/5 rounded-2xl border border-sage/15 p-6 space-y-4">
+                        <h4 class="font-lora text-base font-semibold text-charcoal flex items-center gap-2">
+                            <svg class="w-5 h-5 text-sage-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                            </svg>
+                            Kapsayıcı Tasarım Gücü
+                        </h4>
+                        <p class="text-xs text-dark-gray/80 leading-relaxed">
+                            Sosyal Bilgiler ve Özel Eğitim çift anadal perspektifiyle, bu tarih ünitesindeki soyut kavramlar (töre, kurultay, yerleşik yaşam) görsel, işitsel ve oyunlaştırılmış dijital araçlarla tüm öğrenciler için somutlaştırılmıştır.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sağ Sütun: Akademik Tanıtım ve Mirasın Sütunları (2/3 genişlik) -->
+                <div class="lg:col-span-2 space-y-12 fade-in-up" style="transition-delay: .1s">
+                    
+                    <!-- Kendi Cümlelerimizle Konu Tanıtımı -->
+                    <section>
+                        <h2 class="font-lora text-2xl md:text-3xl font-semibold text-charcoal mb-6 accent-bar">Konu Tanıtımı</h2>
+                        <p class="text-base md:text-lg leading-relaxed text-dark-gray/85 mb-5">
+                            Türkistan coğrafyası, zorlu iklim özellikleri ve uçsuz bucaksız bozkırlarıyla Türk milletinin tarih sahnesine adım attığı ve ortak medeniyet bilincimizin şekillendiği kadim bir alandır. Asya Hun, Kök Türk ve Uygur devletleri, bu coğrafyada sadece siyasi sınırlar çizmekle kalmamış; idari teşkilatlanmadan ordu düzenine, yazılı kültürden yerleşik hayata geçiş pratiklerine kadar bugünkü toplumsal ve kültürel yapımızın sarsılmaz temellerini atmışlardır.
+                        </p>
+                        <p class="text-base leading-relaxed text-dark-gray/80 mb-6">
+                            Bu konu alanını e-Portfolyomun odağı olarak belirlerken temel amacım, öğrencilerin tarihi bilgileri pasif şekilde ezberlemesi yerine, bu bilgilerin medeniyetimize etkilerini <strong>sorgulamalarını</strong> sağlamaktır. Örneğin; Hunların getirdiği onlu ordu yapısının günümüz Türk Silahlı Kuvvetleri'ndeki sürekliliğini, Kök Türklerin Orhun Abideleri'nde ortaya koyduğu devlet ve millet bilincini, Uygurların yerleşik yaşamla birlikte başlattığı tarım, mimari ve matbaacılık devrimini ele alarak geçmiş ile bugün arasında analitik bağlar kurmalarına rehberlik ediyorum.
+                        </p>
+                    </section>
+
+                    <!-- Mirasın Temel Unsurları / Tarihsel Detaylar -->
+                    <section class="space-y-6">
+                        <h3 class="font-lora text-xl font-semibold text-charcoal mb-4">Medeniyet Mirasımızın Tarihsel Kökleri</h3>
+                        
+                        <div class="space-y-4">
+                            <!-- Pillar 1 -->
+                            <div class="bg-white rounded-xl border border-sage/10 p-5 card-hover">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 bg-sage/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <span class="font-lora text-base font-bold text-sage-dark">01</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-lora text-base font-semibold text-charcoal mb-1">Siyasi ve Askeri Teşkilatlanma (Hun & Kök Türk)</h4>
+                                        <p class="text-sm text-dark-gray/70 leading-relaxed">
+                                            İlk Türk devletlerinde yönetimin temelini oluşturan "Kut" anlayışı, istişare meclisi niteliğindeki "Kurultay" ve ikili teşkilat yapısı, Türk devlet geleneğinin ilk adımlarıdır. Askeri alanda ise Mete Han'ın bulduğu "onlu teşkilat" sistemi, modern ordu yapılarının temelini atarak askeri kültürümüzü şekillendirmiştir.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pillar 2 -->
+                            <div class="bg-white rounded-xl border border-sage/10 p-5 card-hover">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 bg-terracotta/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <span class="font-lora text-base font-bold text-terracotta">02</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-lora text-base font-semibold text-charcoal mb-1">Dil, Edebiyat ve Sosyal Düzen (Orhun Yazıtları & Töre)</h4>
+                                        <p class="text-sm text-dark-gray/70 leading-relaxed">
+                                            II. Kök Türk Devleti döneminde dikilen Orhun Yazıtları, Türk dilinin ve tarihinin ilk yazılı belgeleridir. Bu kitabeler, Türk milletine bağımsızlık bilinci ve devlet adamlığı rehberliği sunan tarihi vesikalardır. Toplumsal yaşamı düzenleyen ve adalet ilkesine dayanan "Töre" ise devletin sürdürülebilirliğini sağlamıştır.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pillar 3 -->
+                            <div class="bg-white rounded-xl border border-sage/10 p-5 card-hover">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 bg-sage/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <span class="font-lora text-base font-bold text-sage-dark">03</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-lora text-base font-semibold text-charcoal mb-1">Kültürel Dönüşüm ve Yerleşik Yaşam (Uygurlar)</h4>
+                                        <p class="text-sm text-dark-gray/70 leading-relaxed">
+                                            Uygurlarla birlikte göçebe bozkır kültüründen yerleşik hayata geçiş sağlanmış; tarım, mimari (saray ve tapınaklar), şehircilik (beşbalık, karabalasagun) gelişmiştir. Ayrıca matbaanın ve kütüphanelerin kullanılması, Türk kültür dünyasında entelektüel bir devrimin ve sonraki Türk-İslam medeniyetlerinin altyapısını oluşturmuştur.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Kapsayıcı Öğretim Metotları ve Uyarlamalar -->
+                    <section class="space-y-6 border-t border-sage/10 pt-10">
+                        <h3 class="font-lora text-xl font-semibold text-charcoal mb-4">Pedagojik Yaklaşım ve Uyarlama Stratejileri</h3>
+                        <p class="text-sm md:text-base leading-relaxed text-dark-gray/80 mb-4">
+                            Soyut tarihi kavramları (Kurultay, Kut, Töre) anlamlandırmak, bilişsel veya duyusal açıdan farklı gereksinimleri olan öğrenciler için karmaşık olabilir. Özel Eğitim ve Sosyal Bilgiler çift anadal programındaki birikimimi yansıtarak, bu kazanımı her öğrenci için erişilebilir kılmak adına şu uyarlamaları uyguluyorum:
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-[#2C3E35]/5 rounded-xl border border-sage/10 p-5">
+                                <h5 class="font-lora text-sm font-bold text-[#2C3E35] mb-2">Çoklu Temsil (UDL)</h5>
+                                <p class="text-xs text-dark-gray/75 leading-relaxed">
+                                    Karmaşık tarihi süreçleri sadece düz metin olarak sunmak yerine görsel hiyerarşisi yüksek infografiklerle (Piktochart) ve animasyonlu eğitsel videolarla zenginleştiriyorum. İşitsel ve görsel öğrenenlerin erişimini kolaylaştırıyorum.
+                                </p>
+                            </div>
+                            <div class="bg-[#2C3E35]/5 rounded-xl border border-sage/10 p-5">
+                                <h5 class="font-lora text-sm font-bold text-[#2C3E35] mb-2">Oyunlaştırma ile Değerlendirme</h5>
+                                <p class="text-xs text-dark-gray/75 leading-relaxed">
+                                    Öğrenme güçlüğü veya dikkat süresi kısıtlı öğrenciler için kazanımları "dijital kaçış odası oyunu" (Genially) formuna getirerek, kaygı düzeyini düşürüp motivasyonlu ve kalıcı bir değerlendirme yapıyorum.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
         </div>
     </main>
 
